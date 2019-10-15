@@ -142,7 +142,7 @@ def master():
 
         print("Congratulations, you have found well:", end=' ')
 
-        displyCache(cache)
+        displayCache(cache)
 
  
 
@@ -156,7 +156,7 @@ def chooseGame(S,possibles,results,tries):
 
     elif len(S)==1 
 
-        retrn S.pop()
+        return S.pop()
 
     else:
 
@@ -228,9 +228,9 @@ def game():
 
     while notFound and (tries<=10):
 
-        prin('try',tries)
+        print('try',tries)
 
-        selected = chooseGameBis(S,possibles, results,)
+        selected = chooseGameBis(S,possibles, results)
 
         print('computer proposal: ',end='')
 
@@ -256,7 +256,7 @@ def game():
 
         print("lost, we had to find:",end=' ')
 
-        displyCache(cache)
+        displayCache(cache)
 
     else:
 
